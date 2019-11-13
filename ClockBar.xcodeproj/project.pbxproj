@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9646ECC9237583FE0019A927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646ECC8237583FE0019A927 /* AppDelegate.swift */; };
+		9646ECCB237583FF0019A927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9646ECCA237583FF0019A927 /* Assets.xcassets */; };
+		9646ECCE237583FF0019A927 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9646ECCC237583FF0019A927 /* MainMenu.xib */; };
+		9646ECD82375843B0019A927 /* TouchBar.h in Sources */ = {isa = PBXBuildFile; fileRef = 9646ECD72375843B0019A927 /* TouchBar.h */; };
+		9646ECDB237584CE0019A927 /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9646ECDA237584CE0019A927 /* DFRFoundation.framework */; };
+		9646ECDC237584CE0019A927 /* DFRFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9646ECDA237584CE0019A927 /* DFRFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C89F2F3F5004F39DAC2E5C9D /* Pods_ClockBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091F12975425693F99521C97 /* Pods_ClockBar.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9646ECDD237584CE0019A927 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9646ECDC237584CE0019A927 /* DFRFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		091F12975425693F99521C97 /* Pods_ClockBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClockBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		376ECC70A35AC58E99F85ACB /* Pods-ClockBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockBar.release.xcconfig"; path = "Target Support Files/Pods-ClockBar/Pods-ClockBar.release.xcconfig"; sourceTree = "<group>"; };
+		9646ECC5237583FE0019A927 /* ClockBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9646ECC8237583FE0019A927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9646ECCA237583FF0019A927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9646ECCD237583FF0019A927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9646ECCF237583FF0019A927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9646ECD0237583FF0019A927 /* ClockBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClockBar.entitlements; sourceTree = "<group>"; };
+		9646ECD62375843B0019A927 /* ClockBar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockBar-Bridging-Header.h"; sourceTree = "<group>"; };
+		9646ECD72375843B0019A927 /* TouchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBar.h; sourceTree = "<group>"; };
+		9646ECDA237584CE0019A927 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
+		96D2C44D2375A94400B6B506 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		96D2C44F2375A94A00B6B506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		9B956657E1A6217BD8CE988F /* Pods-ClockBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockBar.debug.xcconfig"; path = "Target Support Files/Pods-ClockBar/Pods-ClockBar.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9646ECC2237583FE0019A927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9646ECDB237584CE0019A927 /* DFRFoundation.framework in Frameworks */,
+				C89F2F3F5004F39DAC2E5C9D /* Pods_ClockBar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AC5394B7663C01B61DF41E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B956657E1A6217BD8CE988F /* Pods-ClockBar.debug.xcconfig */,
+				376ECC70A35AC58E99F85ACB /* Pods-ClockBar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9646ECBC237583FE0019A927 = {
+			isa = PBXGroup;
+			children = (
+				9646ECC7237583FE0019A927 /* ClockBar */,
+				9646ECC6237583FE0019A927 /* Products */,
+				9646ECD9237584CE0019A927 /* Frameworks */,
+				5AC5394B7663C01B61DF41E2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9646ECC6237583FE0019A927 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9646ECC5237583FE0019A927 /* ClockBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9646ECC7237583FE0019A927 /* ClockBar */ = {
+			isa = PBXGroup;
+			children = (
+				9646ECC8237583FE0019A927 /* AppDelegate.swift */,
+				9646ECCC237583FF0019A927 /* MainMenu.xib */,
+				96D2C44B2375A52D00B6B506 /* TouchBar */,
+				96D2C44C2375A53A00B6B506 /* Supporting Files */,
+			);
+			path = ClockBar;
+			sourceTree = "<group>";
+		};
+		9646ECD9237584CE0019A927 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9646ECDA237584CE0019A927 /* DFRFoundation.framework */,
+				091F12975425693F99521C97 /* Pods_ClockBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96D2C44B2375A52D00B6B506 /* TouchBar */ = {
+			isa = PBXGroup;
+			children = (
+				9646ECD72375843B0019A927 /* TouchBar.h */,
+				9646ECD62375843B0019A927 /* ClockBar-Bridging-Header.h */,
+			);
+			path = TouchBar;
+			sourceTree = "<group>";
+		};
+		96D2C44C2375A53A00B6B506 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9646ECCA237583FF0019A927 /* Assets.xcassets */,
+				9646ECCF237583FF0019A927 /* Info.plist */,
+				9646ECD0237583FF0019A927 /* ClockBar.entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9646ECC4237583FE0019A927 /* ClockBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9646ECD3237583FF0019A927 /* Build configuration list for PBXNativeTarget "ClockBar" */;
+			buildPhases = (
+				ABFABC5CAB4AB4986F24198D /* [CP] Check Pods Manifest.lock */,
+				9646ECC1237583FE0019A927 /* Sources */,
+				9646ECC2237583FE0019A927 /* Frameworks */,
+				9646ECC3237583FE0019A927 /* Resources */,
+				9646ECDD237584CE0019A927 /* Embed Frameworks */,
+				BE5B6194453C404BC7024E1B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClockBar;
+			productName = ClockBar;
+			productReference = 9646ECC5237583FE0019A927 /* ClockBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9646ECBD237583FE0019A927 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Licardo;
+				TargetAttributes = {
+					9646ECC4237583FE0019A927 = {
+						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 9646ECC0237583FE0019A927 /* Build configuration list for PBXProject "ClockBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 9646ECBC237583FE0019A927;
+			productRefGroup = 9646ECC6237583FE0019A927 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9646ECC4237583FE0019A927 /* ClockBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9646ECC3237583FE0019A927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9646ECCB237583FF0019A927 /* Assets.xcassets in Resources */,
+				9646ECCE237583FF0019A927 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABFABC5CAB4AB4986F24198D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClockBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE5B6194453C404BC7024E1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClockBar/Pods-ClockBar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClockBar/Pods-ClockBar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClockBar/Pods-ClockBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9646ECC1237583FE0019A927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9646ECC9237583FE0019A927 /* AppDelegate.swift in Sources */,
+				9646ECD82375843B0019A927 /* TouchBar.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9646ECCC237583FF0019A927 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9646ECCD237583FF0019A927 /* Base */,
+				96D2C44D2375A94400B6B506 /* zh-Hans */,
+				96D2C44F2375A94A00B6B506 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9646ECD1237583FF0019A927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9646ECD2237583FF0019A927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9646ECD4237583FF0019A927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B956657E1A6217BD8CE988F /* Pods-ClockBar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "ClockBar/Supporting Files/ClockBar.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 20191108;
+				DEVELOPMENT_TEAM = 2U23P5CPX2;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "ClockBar/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.licardo.ClockBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClockBar/TouchBar/ClockBar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Debug;
+		};
+		9646ECD5237583FF0019A927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 376ECC70A35AC58E99F85ACB /* Pods-ClockBar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "ClockBar/Supporting Files/ClockBar.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 20191108;
+				DEVELOPMENT_TEAM = 2U23P5CPX2;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "ClockBar/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.licardo.ClockBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClockBar/TouchBar/ClockBar-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9646ECC0237583FE0019A927 /* Build configuration list for PBXProject "ClockBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9646ECD1237583FF0019A927 /* Debug */,
+				9646ECD2237583FF0019A927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9646ECD3237583FF0019A927 /* Build configuration list for PBXNativeTarget "ClockBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9646ECD4237583FF0019A927 /* Debug */,
+				9646ECD5237583FF0019A927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9646ECBD237583FE0019A927 /* Project object */;
+}

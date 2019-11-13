@@ -1,0 +1,123 @@
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "0Tg-5u-8lg"; */
+"0Tg-5u-8lg.title" = "Preferences";
+
+/* Class = "NSButtonCell"; title = "Paypal"; ObjectID = "0lI-iQ-jGI"; */
+"0lI-iQ-jGI.title" = "Paypal";
+
+/* Class = "NSButtonCell"; title = "albert.abdilim@foxmail.com"; ObjectID = "1S2-TX-DeL"; */
+"1S2-TX-DeL.title" = "albert.abdilim@foxmail.com";
+
+/* Class = "NSTextFieldCell"; title = "ClockBar"; ObjectID = "2Ye-YY-Rit"; */
+"2Ye-YY-Rit.title" = "ClockBar";
+
+/* Class = "NSButtonCell"; title = "12h"; ObjectID = "2an-7i-wIQ"; */
+"2an-7i-wIQ.title" = "12h";
+
+/* Class = "NSMenuItem"; title = "Quit ClockBar"; ObjectID = "3gc-RH-MJs"; */
+"3gc-RH-MJs.title" = "Quit ClockBar";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Quit ClockBar"; ObjectID = "ABk-fD-TqN"; */
+"ABk-fD-TqN.ibShadowedToolTip" = "Quit ClockBar";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Close Preferences"; ObjectID = "BIt-tU-Qsl"; */
+"BIt-tU-Qsl.ibShadowedToolTip" = "Close Preferences";
+
+/* Class = "NSButtonCell"; title = "Yes"; ObjectID = "C5n-bR-pPo"; */
+"C5n-bR-pPo.title" = "Yes";
+
+/* Class = "NSTextFieldCell"; title = "ClockBar"; ObjectID = "Gdv-id-Bfe"; */
+"Gdv-id-Bfe.title" = "ClockBar";
+
+/* Class = "NSTextFieldCell"; title = "✉️ Email:"; ObjectID = "J1d-o0-r9e"; */
+"J1d-o0-r9e.title" = "✉️ Email:";
+
+/* Class = "NSWindow"; title = "Alert"; ObjectID = "KwB-Nj-KnK"; */
+"KwB-Nj-KnK.title" = "Alert";
+
+/* Class = "NSTextFieldCell"; title = "⚠️ Note that this will quit ClockBar, and you will not be able to know the time with a single glance at Touch Bar!"; ObjectID = "OSv-cp-xyZ"; */
+"OSv-cp-xyZ.title" = "⚠️ Note that this will quit ClockBar, and you will not be able to know the time with a single glance at Touch Bar!";
+
+/* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "Pgc-gr-roa"; */
+"Pgc-gr-roa.title" = "Copyright © 2019 Licardo. All rights reserved.";
+
+/* Class = "NSWindow"; title = "About"; ObjectID = "QlM-dt-ovB"; */
+"QlM-dt-ovB.title" = "About";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "RZs-h7-62o"; */
+"RZs-h7-62o.title" = "Cancel";
+
+/* Class = "NSButtonCell"; title = "Close"; ObjectID = "TGM-7J-Ajt"; */
+"TGM-7J-Ajt.title" = "Close";
+
+/* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "UGf-nk-Lea"; */
+"UGf-nk-Lea.title" = "Version:";
+
+/* Class = "NSButtonCell"; title = "https://github.com/L1cardo"; ObjectID = "UjD-k2-kOc"; */
+"UjD-k2-kOc.title" = "https://github.com/L1cardo";
+
+/* Class = "NSButtonCell"; title = "https://licardo.cn"; ObjectID = "XL3-F4-gbC"; */
+"XL3-F4-gbC.title" = "https://licardo.cn";
+
+/* Class = "NSTextFieldCell"; title = "🐦 Twitter:"; ObjectID = "aBj-fa-9vi"; */
+"aBj-fa-9vi.title" = "🐦 Twitter:";
+
+/* Class = "NSTextFieldCell"; title = "Quit ClockBar?"; ObjectID = "aur-Eu-LGU"; */
+"aur-Eu-LGU.title" = "Quit ClockBar?";
+
+/* Class = "NSButtonCell"; title = "@AlbertAbdilim"; ObjectID = "czA-Ls-52c"; */
+"czA-Ls-52c.title" = "@AlbertAbdilim";
+
+/* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "erf-iJ-sJj"; */
+"erf-iJ-sJj.title" = "versionNum";
+
+/* Class = "NSMenuItem"; title = "About ClockBar"; ObjectID = "exy-IO-rt5"; */
+"exy-IO-rt5.title" = "About ClockBar";
+
+/* Class = "NSButtonCell"; title = "Alipay"; ObjectID = "fUc-G3-jsV"; */
+"fUc-G3-jsV.title" = "Alipay";
+
+/* Class = "NSTextFieldCell"; title = "Switch between 12h and 24h mode"; ObjectID = "gjy-f4-htW"; */
+"gjy-f4-htW.title" = "Switch between 12h and 24h mode";
+
+/* Class = "NSButtonCell"; title = "Quit"; ObjectID = "hM5-mG-3ga"; */
+"hM5-mG-3ga.title" = "Quit";
+
+/* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "iWB-DZ-BUc"; */
+"iWB-DZ-BUc.title" = "Copyright © 2019 Licardo. All rights reserved.";
+
+/* Class = "NSTextFieldCell"; title = "Time Format:"; ObjectID = "iiK-Xo-mCg"; */
+"iiK-Xo-mCg.title" = "Time Format:";
+
+/* Class = "NSButtonCell"; title = "WeChat"; ObjectID = "oHH-7Y-vLn"; */
+"oHH-7Y-vLn.title" = "WeChat";
+
+/* Class = "NSTextFieldCell"; title = "💻 GitHub:"; ObjectID = "qHX-0i-iHV"; */
+"qHX-0i-iHV.title" = "💻 GitHub:";
+
+/* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "ryL-ba-ghU"; */
+"ryL-ba-ghU.title" = "Version:";
+
+/* Class = "NSButtonCell"; title = "24h"; ObjectID = "tGZ-DO-h5d"; */
+"tGZ-DO-h5d.title" = "24h";
+
+/* Class = "NSTextFieldCell"; title = "💡 HomePage:"; ObjectID = "uEF-Zb-3Tb"; */
+"uEF-Zb-3Tb.title" = "💡 HomePage:";
+
+/* Class = "NSTextFieldCell"; title = "ClockBar will launch at login automatically"; ObjectID = "wW0-bl-Wj0"; */
+"wW0-bl-Wj0.title" = "ClockBar will launch at login automatically";
+
+/* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "wk5-1m-IuC"; */
+"wk5-1m-IuC.title" = "versionNum";
+
+/* Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "xIO-oP-dmb"; */
+"xIO-oP-dmb.title" = "Preferences...";
+
+/* Class = "NSTextFieldCell"; title = "Launch At Login"; ObjectID = "yrn-U5-u0G"; */
+"yrn-U5-u0G.title" = "Launch At Login";
+
+/* Class = "NSTextFieldCell"; title = "💸 Donate:"; ObjectID = "zRf-QZ-yxD"; */
+"zRf-QZ-yxD.title" = "💸 Donate:";
+
+/* Class = "NSMenuItem"; title = "Check for Updates..."; ObjectID = "zzD-T2-6di"; */
+"zzD-T2-6di.title" = "Check for Updates...";

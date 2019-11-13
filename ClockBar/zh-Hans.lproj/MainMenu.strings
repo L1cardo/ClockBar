@@ -1,0 +1,123 @@
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "0Tg-5u-8lg"; */
+"0Tg-5u-8lg.title" = "偏好设置";
+
+/* Class = "NSButtonCell"; title = "Paypal"; ObjectID = "0lI-iQ-jGI"; */
+"0lI-iQ-jGI.title" = "Paypal";
+
+/* Class = "NSButtonCell"; title = "albert.abdilim@foxmail.com"; ObjectID = "1S2-TX-DeL"; */
+"1S2-TX-DeL.title" = "albert.abdilim@foxmail.com";
+
+/* Class = "NSTextFieldCell"; title = "ClockBar"; ObjectID = "2Ye-YY-Rit"; */
+"2Ye-YY-Rit.title" = "ClockBar";
+
+/* Class = "NSButtonCell"; title = "12h"; ObjectID = "2an-7i-wIQ"; */
+"2an-7i-wIQ.title" = "12小时";
+
+/* Class = "NSMenuItem"; title = "Quit ClockBar"; ObjectID = "3gc-RH-MJs"; */
+"3gc-RH-MJs.title" = "退出 ClockBar";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Quit ClockBar"; ObjectID = "ABk-fD-TqN"; */
+"ABk-fD-TqN.ibShadowedToolTip" = "退出 ClockBar";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Close Preferences"; ObjectID = "BIt-tU-Qsl"; */
+"BIt-tU-Qsl.ibShadowedToolTip" = "关闭偏好设置";
+
+/* Class = "NSButtonCell"; title = "Yes"; ObjectID = "C5n-bR-pPo"; */
+"C5n-bR-pPo.title" = "确定";
+
+/* Class = "NSTextFieldCell"; title = "ClockBar"; ObjectID = "Gdv-id-Bfe"; */
+"Gdv-id-Bfe.title" = "ClockBar";
+
+/* Class = "NSTextFieldCell"; title = "✉️ Email:"; ObjectID = "J1d-o0-r9e"; */
+"J1d-o0-r9e.title" = "✉️ 邮箱:";
+
+/* Class = "NSWindow"; title = "Alert"; ObjectID = "KwB-Nj-KnK"; */
+"KwB-Nj-KnK.title" = "警告";
+
+/* Class = "NSTextFieldCell"; title = "⚠️ Note that this will quit ClockBar, and you will not be able to know the time with a single glance at Touch Bar!"; ObjectID = "OSv-cp-xyZ"; */
+"OSv-cp-xyZ.title" = "⚠️ 请注意, 这将退出ClockBar, 您无法将只看一眼 Touch Bar 就知道时间！";
+
+/* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "Pgc-gr-roa"; */
+"Pgc-gr-roa.title" = "Copyright © 2019 Licardo. 保留所有权利.";
+
+/* Class = "NSWindow"; title = "About"; ObjectID = "QlM-dt-ovB"; */
+"QlM-dt-ovB.title" = "关于";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "RZs-h7-62o"; */
+"RZs-h7-62o.title" = "取消";
+
+/* Class = "NSButtonCell"; title = "Close"; ObjectID = "TGM-7J-Ajt"; */
+"TGM-7J-Ajt.title" = "关闭";
+
+/* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "UGf-nk-Lea"; */
+"UGf-nk-Lea.title" = "版本:";
+
+/* Class = "NSButtonCell"; title = "https://github.com/L1cardo"; ObjectID = "UjD-k2-kOc"; */
+"UjD-k2-kOc.title" = "https://github.com/L1cardo";
+
+/* Class = "NSButtonCell"; title = "https://licardo.cn"; ObjectID = "XL3-F4-gbC"; */
+"XL3-F4-gbC.title" = "https://licardo.cn";
+
+/* Class = "NSTextFieldCell"; title = "🐦 Twitter:"; ObjectID = "aBj-fa-9vi"; */
+"aBj-fa-9vi.title" = "🐦 推特:";
+
+/* Class = "NSTextFieldCell"; title = "Quit ClockBar?"; ObjectID = "aur-Eu-LGU"; */
+"aur-Eu-LGU.title" = "退出 ClockBar?";
+
+/* Class = "NSButtonCell"; title = "@AlbertAbdilim"; ObjectID = "czA-Ls-52c"; */
+"czA-Ls-52c.title" = "@AlbertAbdilim";
+
+/* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "erf-iJ-sJj"; */
+"erf-iJ-sJj.title" = "版本号";
+
+/* Class = "NSMenuItem"; title = "About ClockBar"; ObjectID = "exy-IO-rt5"; */
+"exy-IO-rt5.title" = "关于 ClockBar";
+
+/* Class = "NSButtonCell"; title = "Alipay"; ObjectID = "fUc-G3-jsV"; */
+"fUc-G3-jsV.title" = "支付宝";
+
+/* Class = "NSTextFieldCell"; title = "Switch between 12h and 24h mode"; ObjectID = "gjy-f4-htW"; */
+"gjy-f4-htW.title" = "在 12小时 与 24小时 之间切换";
+
+/* Class = "NSButtonCell"; title = "Quit"; ObjectID = "hM5-mG-3ga"; */
+"hM5-mG-3ga.title" = "退出";
+
+/* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "iWB-DZ-BUc"; */
+"iWB-DZ-BUc.title" = "Copyright © 2019 Licardo. 保留所有权利.";
+
+/* Class = "NSTextFieldCell"; title = "Time Format:"; ObjectID = "iiK-Xo-mCg"; */
+"iiK-Xo-mCg.title" = "时间格式:";
+
+/* Class = "NSButtonCell"; title = "WeChat"; ObjectID = "oHH-7Y-vLn"; */
+"oHH-7Y-vLn.title" = "微信";
+
+/* Class = "NSTextFieldCell"; title = "💻 GitHub:"; ObjectID = "qHX-0i-iHV"; */
+"qHX-0i-iHV.title" = "💻 GitHub:";
+
+/* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "ryL-ba-ghU"; */
+"ryL-ba-ghU.title" = "版本:";
+
+/* Class = "NSButtonCell"; title = "24h"; ObjectID = "tGZ-DO-h5d"; */
+"tGZ-DO-h5d.title" = "24小时";
+
+/* Class = "NSTextFieldCell"; title = "💡 HomePage:"; ObjectID = "uEF-Zb-3Tb"; */
+"uEF-Zb-3Tb.title" = "💡 主页:";
+
+/* Class = "NSTextFieldCell"; title = "ClockBar will launch at login automatically"; ObjectID = "wW0-bl-Wj0"; */
+"wW0-bl-Wj0.title" = "ClockBar 将在系统登录时启动";
+
+/* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "wk5-1m-IuC"; */
+"wk5-1m-IuC.title" = "版本号";
+
+/* Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "xIO-oP-dmb"; */
+"xIO-oP-dmb.title" = "偏好设置...";
+
+/* Class = "NSTextFieldCell"; title = "Launch At Login"; ObjectID = "yrn-U5-u0G"; */
+"yrn-U5-u0G.title" = "登录时启动";
+
+/* Class = "NSTextFieldCell"; title = "💸 Donate:"; ObjectID = "zRf-QZ-yxD"; */
+"zRf-QZ-yxD.title" = "💸 捐赠:";
+
+/* Class = "NSMenuItem"; title = "Check for Updates..."; ObjectID = "zzD-T2-6di"; */
+"zzD-T2-6di.title" = "检查更新...";
