@@ -1,17 +1,12 @@
 <h1 align="center">Welcome to ClockBar 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.1.0-blue.svg?cacheSeconds=2592000" />
-  <img alt="Platform: macOS" src="https://img.shields.io/badge/platform-macOS-orange" />
-  <a href="https://raw.githubusercontent.com/L1cardo/ClockBar/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-  <a href="https://twitter.com/AlbertAbdilim" target="_blank">
-    <img alt="Twitter: AlbertAbdilim" src="https://img.shields.io/twitter/follow/AlbertAbdilim.svg?style=social" />
-  </a>
-  <a href="https://twitter.com/AlbertAbdilim" target="_blank">
-    <img alt="Weibo: ABD_R3yiM" src="https://img.shields.io/badge/微博-@ABD_R3yiM-red.svg" />
-  </a>
-</p>
+
+![version](https://img.shields.io/badge/version-0.0.2-blue.svg?cacheSeconds=2592000)
+![platform](https://img.shields.io/badge/platform-macOS>=10.14-orange)
+[![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/L1cardo/ClockBar/master/LICENSE)
+![star](https://img.shields.io/github/stars/L1cardo/ClockBar?style=social)
+![fork](https://img.shields.io/github/forks/L1cardo/ClockBar?style=social)
+[![twitter](https://img.shields.io/twitter/follow/AlbertAbdilim.svg?style=social)](https://twitter.com/AlbertAbdilim)
+[![Weibo](https://img.shields.io/badge/Weibo-@ABD_R3yiM-red.svg)](https://www.weibo.com/1935602951)
 
 > Get clock right on the sweetest spot of the macbook, on the Touch Bar.
 
