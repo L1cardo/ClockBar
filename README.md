@@ -17,6 +17,10 @@
 
 ### 🏠 [Homepage](https://github.com/L1cardo/ClockBar)
 
+## Announcement
+
+ClockBar is developed by a medical student, so please kind to me!
+
 ## Screenshots
 
 ![image](Screenshots/ScreenShot1.png)
