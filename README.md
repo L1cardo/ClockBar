@@ -14,7 +14,7 @@
 
 ## Announcement
 
-ClockBar is developed by a medical student, so please kind to me!
+ClockBar is developed by a medical student, so please be kind to me!
 
 ## Screenshots
 
