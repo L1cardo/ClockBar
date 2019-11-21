@@ -11,19 +11,19 @@
 		9646ECCB237583FF0019A927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9646ECCA237583FF0019A927 /* Assets.xcassets */; };
 		9646ECCE237583FF0019A927 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9646ECCC237583FF0019A927 /* MainMenu.xib */; };
 		9646ECD82375843B0019A927 /* TouchBar.h in Sources */ = {isa = PBXBuildFile; fileRef = 9646ECD72375843B0019A927 /* TouchBar.h */; };
-		9646ECDB237584CE0019A927 /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9646ECDA237584CE0019A927 /* DFRFoundation.framework */; };
-		9646ECDC237584CE0019A927 /* DFRFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9646ECDA237584CE0019A927 /* DFRFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		96623361238659C5006C7AE2 /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9646ECDA237584CE0019A927 /* DFRFoundation.framework */; };
+		96623362238659C5006C7AE2 /* DFRFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9646ECDA237584CE0019A927 /* DFRFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C89F2F3F5004F39DAC2E5C9D /* Pods_ClockBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091F12975425693F99521C97 /* Pods_ClockBar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9646ECDD237584CE0019A927 /* Embed Frameworks */ = {
+		96623363238659C5006C7AE2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9646ECDC237584CE0019A927 /* DFRFoundation.framework in Embed Frameworks */,
+				96623362238659C5006C7AE2 /* DFRFoundation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9646ECDB237584CE0019A927 /* DFRFoundation.framework in Frameworks */,
+				96623361238659C5006C7AE2 /* DFRFoundation.framework in Frameworks */,
 				C89F2F3F5004F39DAC2E5C9D /* Pods_ClockBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +137,8 @@
 				9646ECC1237583FE0019A927 /* Sources */,
 				9646ECC2237583FE0019A927 /* Frameworks */,
 				9646ECC3237583FE0019A927 /* Resources */,
-				9646ECDD237584CE0019A927 /* Embed Frameworks */,
 				BE5B6194453C404BC7024E1B /* [CP] Embed Pods Frameworks */,
+				96623363238659C5006C7AE2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
