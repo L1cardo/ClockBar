@@ -1,5 +1,5 @@
 //
-//  TouchBar.m
+//  TouchBar.h
 //  ClockBar
 //
 //  Created by Licardo on 2019/11/8.
