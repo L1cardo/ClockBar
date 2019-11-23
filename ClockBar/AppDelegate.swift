@@ -25,7 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     var touchBarButton: NSButton?
     var timeFormatter: DateFormatter?
-    let statusBarMenuItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    let statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
@@ -35,8 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         aboutWindowVersionNum.stringValue = version
         
         // status bar
-        statusBarMenuItem.button?.image = NSImage(named: "StatusBarIcon")
-        statusBarMenuItem.button?.action = #selector(self.displayStatusBarMenu)
+        displayStatusBarMenu()
    
         launchAtLoginCheckbox.state = LoginServiceKit.isExistLoginItems() ? .on : .off
         
@@ -85,23 +84,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     // display status menu
-    @objc func displayStatusBarMenu() {
-        guard let button = statusBarMenuItem.button else { return }
-        let x = button.frame.origin.x
-        let y = button.frame.origin.y - 5
-        let w = button.window
-        let location = button.superview!.convert(NSMakePoint(x, y), to: nil)
-        let event = NSEvent.mouseEvent(with: .leftMouseUp,
-                                       location: location,
-                                       modifierFlags: NSEvent.ModifierFlags(rawValue: 0),
-                                       timestamp: 0,
-                                       windowNumber: w!.windowNumber,
-                                       context: NSGraphicsContext.init(),
-                                       eventNumber: 0,
-                                       clickCount: 1,
-                                       pressure: 0)!
-        NSMenu.popUpContextMenu(statusBarMenu, with: event, for: button)
+    func displayStatusBarMenu() {
+        guard let button = statusBarItem.button else { return }
+        statusBarItem.button?.image = NSImage(named: "StatusBarIcon")
+        button.action = #selector(statusBarMenuClicked)
+        button.sendAction(on: [.leftMouseUp, .rightMouseUp])
     }
+    
+    @objc func statusBarMenuClicked() {
+        let event = NSApp.currentEvent!
+        if event.type == .leftMouseUp || event.type == .rightMouseUp {
+            statusBarItem.menu = statusBarMenu
+            statusBarItem.button?.performClick(self)
+            statusBarItem.menu = nil
+        }
+    }
+    
     
     
     // click status bar menu item

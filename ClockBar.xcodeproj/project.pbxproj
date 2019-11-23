@@ -322,6 +322,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -376,6 +377,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -383,12 +385,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B956657E1A6217BD8CE988F /* Pods-ClockBar.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "ClockBar/Supporting Files/ClockBar.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20191108;
+				CURRENT_PROJECT_VERSION = 20191123;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "ClockBar/Supporting Files/Info.plist";
@@ -413,12 +417,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 376ECC70A35AC58E99F85ACB /* Pods-ClockBar.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "ClockBar/Supporting Files/ClockBar.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20191108;
+				CURRENT_PROJECT_VERSION = 20191123;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "ClockBar/Supporting Files/Info.plist";
