@@ -47,6 +47,14 @@ Welcome to pull request.
 
 Give a ⭐️ if this project helped you!
 
+## Built with
+
+[TouchBarKit](https://github.com/L1cardo/TouchBarKit) - Display anything you want on the Touch Bar right side of brightness button
+
+## You may also love my another project
+
+[DarkLight](https://github.com/L1cardo/DarkLight) - Switch between Dark and Light mode with an ease
+
 ## 📝 License
 
 Copyright © 2019 [L1cardo](https://github.com/L1cardo).<br />
