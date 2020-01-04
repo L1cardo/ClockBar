@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to ClockBar 👋</h1>
 
-![version](https://img.shields.io/badge/version-1.1.0-blue.svg?cacheSeconds=2592000)
+![version](https://img.shields.io/github/v/release/L1cardo/ClockBar?label=version)
 ![platform](https://img.shields.io/badge/platform-macOS>=10.13-orange)
 [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/L1cardo/ClockBar/master/LICENSE)
 ![star](https://img.shields.io/github/stars/L1cardo/ClockBar?style=social)
