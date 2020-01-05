@@ -113,8 +113,8 @@
 /* Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "xIO-oP-dmb"; */
 "xIO-oP-dmb.title" = "Preferences...";
 
-/* Class = "NSTextFieldCell"; title = "Launch At Login"; ObjectID = "yrn-U5-u0G"; */
-"yrn-U5-u0G.title" = "Launch At Login";
+/* Class = "NSButtonCell"; title = "Launch At Login"; ObjectID = "xZJ-kX-Wg5"; */
+"xZJ-kX-Wg5.title" = "Launch At Login";
 
 /* Class = "NSTextFieldCell"; title = "💸 Donate:"; ObjectID = "zRf-QZ-yxD"; */
 "zRf-QZ-yxD.title" = "💸 Donate:";

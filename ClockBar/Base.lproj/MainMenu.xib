@@ -91,7 +91,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ghx-xm-Rj1">
                                         <rect key="frame" x="-2" y="0.0" width="47" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Version:" id="UGf-nk-Lea">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -99,7 +99,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0QR-3a-obu">
                                         <rect key="frame" x="46" y="0.0" width="67" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="versionNum" id="wk5-1m-IuC">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -115,8 +115,8 @@
                                 </customSpacing>
                             </stackView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1jA-cq-2mC">
-                                <rect key="frame" x="9" y="20" width="282" height="16"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Copyright © 2019 Licardo. All rights reserved." id="iWB-DZ-BUc">
+                                <rect key="frame" x="9" y="20" width="283" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Copyright © 2020 Licardo. All rights reserved." id="iWB-DZ-BUc">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -162,14 +162,14 @@
                                 </customSpacing>
                             </stackView>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLZ-dd-kCX" userLabel="Preferences">
-                                <rect key="frame" x="20" y="111" width="260" height="90"/>
+                                <rect key="frame" x="20" y="113" width="260" height="88"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="258-Dx-6tx" userLabel="Launch At Login Checkbox">
-                                        <rect key="frame" x="0.0" y="74" width="116" height="16"/>
+                                        <rect key="frame" x="0.0" y="74" width="116" height="14"/>
                                         <subviews>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bpk-61-s8D">
-                                                <rect key="frame" x="-2" y="-1" width="22" height="18"/>
-                                                <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="xZJ-kX-Wg5">
+                                                <rect key="frame" x="-2" y="-2" width="120" height="18"/>
+                                                <buttonCell key="cell" type="check" title="Launch At Login" bezelStyle="regularSquare" imagePosition="left" inset="2" id="xZJ-kX-Wg5">
                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
@@ -177,32 +177,21 @@
                                                     <action selector="launchAtLoginChecked:" target="Voe-Tx-rLC" id="0tN-zg-kln"/>
                                                 </connections>
                                             </button>
-                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aOf-2h-L00">
-                                                <rect key="frame" x="16" y="0.0" width="102" height="16"/>
-                                                <textFieldCell key="cell" lineBreakMode="clipping" title="Launch At Login" id="yrn-U5-u0G">
-                                                    <font key="font" metaFont="system"/>
-                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                </textFieldCell>
-                                            </textField>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="Bpk-61-s8D" firstAttribute="centerY" secondItem="258-Dx-6tx" secondAttribute="centerY" id="9hm-qj-KSb"/>
-                                            <constraint firstItem="aOf-2h-L00" firstAttribute="centerY" secondItem="258-Dx-6tx" secondAttribute="centerY" id="Zor-CP-SOf"/>
                                         </constraints>
                                         <visibilityPriorities>
                                             <integer value="1000"/>
-                                            <integer value="1000"/>
                                         </visibilityPriorities>
                                         <customSpacing>
-                                            <real value="3.4028234663852886e+38"/>
                                             <real value="3.4028234663852886e+38"/>
                                         </customSpacing>
                                     </stackView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tyx-PD-sk3">
                                         <rect key="frame" x="16" y="50" width="225" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="ClockBar will launch at login automatically" id="wW0-bl-Wj0">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -258,7 +247,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aFd-zJ-NHC">
                                         <rect key="frame" x="16" y="0.0" width="188" height="14"/>
                                         <textFieldCell key="cell" title="Switch between 12h and 24h mode" id="gjy-f4-htW">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -454,7 +443,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="k71-Ma-etO">
                                         <rect key="frame" x="-2" y="0.0" width="47" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Version:" id="ryL-ba-ghU">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -462,7 +451,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OSa-p3-sif">
                                         <rect key="frame" x="46" y="0.0" width="67" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="versionNum" id="erf-iJ-sJj">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -478,8 +467,8 @@
                                 </customSpacing>
                             </stackView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Fu-YU-f7I">
-                                <rect key="frame" x="9" y="20" width="282" height="16"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Copyright © 2019 Licardo. All rights reserved." id="Pgc-gr-roa">
+                                <rect key="frame" x="9" y="20" width="283" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Copyright © 2020 Licardo. All rights reserved." id="Pgc-gr-roa">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

@@ -42,8 +42,8 @@
 		9646ECD62375843B0019A927 /* ClockBar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockBar-Bridging-Header.h"; sourceTree = "<group>"; };
 		9646ECD72375843B0019A927 /* TouchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBar.h; sourceTree = "<group>"; };
 		9646ECDA237584CE0019A927 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
+		96BB033923C2304F004D5AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		96D2C44D2375A94400B6B506 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
-		96D2C44F2375A94A00B6B506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		9B956657E1A6217BD8CE988F /* Pods-ClockBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockBar.debug.xcconfig"; path = "Target Support Files/Pods-ClockBar/Pods-ClockBar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -256,7 +256,7 @@
 			children = (
 				9646ECCD237583FF0019A927 /* Base */,
 				96D2C44D2375A94400B6B506 /* zh-Hans */,
-				96D2C44F2375A94A00B6B506 /* en */,
+				96BB033923C2304F004D5AFF /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
