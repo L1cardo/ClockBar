@@ -39,14 +39,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         launchAtLoginCheckbox.state = LoginServiceKit.isExistLoginItems() ? .on : .off
         
         switch UserDefaults.standard.string(forKey: "timeFormat") {
-        case "h:mm":
-            timeFormat12h.state = .on
-            timeFormat24h.state = .off
         case "HH:mm":
             timeFormat12h.state = .off
             timeFormat24h.state = .on
         default:
-            return
+            timeFormat12h.state = .on
+            timeFormat24h.state = .off
         }
         
         clockBar()
@@ -65,7 +63,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         DFRSystemModalShowsCloseBoxWhenFrontMost(true)
 
         timeFormatter = DateFormatter()
-        timeFormatter?.dateFormat = UserDefaults.standard.string(forKey: "timeFormat")
+        timeFormatter?.dateFormat = UserDefaults.standard.string(forKey: "timeFormat") ?? "h:mm"
         let nowTime = timeFormatter?.string(from: Date())
 
         let clockBarIdentifier = NSTouchBarItem.Identifier(rawValue: "ClockBar")
@@ -78,7 +76,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     // update time
     @objc func updateTime() {
-        timeFormatter?.dateFormat = UserDefaults.standard.string(forKey: "timeFormat")
+        timeFormatter?.dateFormat = UserDefaults.standard.string(forKey: "timeFormat") ?? "h:mm"
         touchBarButton?.title = (timeFormatter?.string(from: Date()))!
     }
     
@@ -98,8 +96,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             statusBarItem.menu = nil
         }
     }
-    
-    
     
     // click status bar menu item
     @IBAction func didClickStatusBarMenuItem(_ sender: NSMenuItem) {
