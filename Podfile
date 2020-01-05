@@ -7,7 +7,6 @@ target 'ClockBar' do
 
   # Pods for ClockBar
     pod 'LoginServiceKit', :git => 'https://github.com/Clipy/LoginServiceKit.git'
-    pod 'Defaults'
     pod 'Sparkle'
 
 end

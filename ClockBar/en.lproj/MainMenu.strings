@@ -38,8 +38,8 @@
 /* Class = "NSTextFieldCell"; title = "⚠️ Note that this will quit ClockBar, and you will not be able to know the time with a single glance at Touch Bar!"; ObjectID = "OSv-cp-xyZ"; */
 "OSv-cp-xyZ.title" = "⚠️ Note that this will quit ClockBar, and you will not be able to know the time with a single glance at Touch Bar!";
 
-/* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "Pgc-gr-roa"; */
-"Pgc-gr-roa.title" = "Copyright © 2019 Licardo. All rights reserved.";
+/* Class = "NSTextFieldCell"; title = "Copyright © 2020 Licardo. All rights reserved."; ObjectID = "Pgc-gr-roa"; */
+"Pgc-gr-roa.title" = "Copyright © 2020 Licardo. All rights reserved.";
 
 /* Class = "NSWindow"; title = "About"; ObjectID = "QlM-dt-ovB"; */
 "QlM-dt-ovB.title" = "About";
@@ -83,8 +83,8 @@
 /* Class = "NSButtonCell"; title = "Quit"; ObjectID = "hM5-mG-3ga"; */
 "hM5-mG-3ga.title" = "Quit";
 
-/* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "iWB-DZ-BUc"; */
-"iWB-DZ-BUc.title" = "Copyright © 2019 Licardo. All rights reserved.";
+/* Class = "NSTextFieldCell"; title = "Copyright © 2020 Licardo. All rights reserved."; ObjectID = "iWB-DZ-BUc"; */
+"iWB-DZ-BUc.title" = "Copyright © 2020 Licardo. All rights reserved.";
 
 /* Class = "NSTextFieldCell"; title = "Time Format:"; ObjectID = "iiK-Xo-mCg"; */
 "iiK-Xo-mCg.title" = "Time Format:";

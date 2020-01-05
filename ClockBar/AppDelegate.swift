@@ -8,7 +8,6 @@
 
 import Cocoa
 import LoginServiceKit
-import Defaults
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -39,7 +38,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
    
         launchAtLoginCheckbox.state = LoginServiceKit.isExistLoginItems() ? .on : .off
         
-        switch Defaults[.timeFormat] {
+        switch UserDefaults.standard.string(forKey: "timeFormat") {
         case "h:mm":
             timeFormat12h.state = .on
             timeFormat24h.state = .off
@@ -66,12 +65,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         DFRSystemModalShowsCloseBoxWhenFrontMost(true)
 
         timeFormatter = DateFormatter()
-        timeFormatter?.dateFormat = Defaults[.timeFormat]
+        timeFormatter?.dateFormat = UserDefaults.standard.string(forKey: "timeFormat")
         let nowTime = timeFormatter?.string(from: Date())
 
         let clockBarIdentifier = NSTouchBarItem.Identifier(rawValue: "ClockBar")
         let clockBar = NSCustomTouchBarItem.init(identifier: clockBarIdentifier)
-        touchBarButton = NSButton(title: nowTime!, target: nil, action: nil)
+        touchBarButton = NSButton(title: nowTime!, target: self, action: nil)
         clockBar.view = touchBarButton!
         NSTouchBarItem.addSystemTrayItem(clockBar)
         DFRElementSetControlStripPresenceForIdentifier(clockBarIdentifier, true)
@@ -79,7 +78,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     // update time
     @objc func updateTime() {
-        timeFormatter?.dateFormat = Defaults[.timeFormat]
+        timeFormatter?.dateFormat = UserDefaults.standard.string(forKey: "timeFormat")
         touchBarButton?.title = (timeFormatter?.string(from: Date()))!
     }
     
@@ -134,10 +133,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func timeFormat(_ sender: NSButton) {
         switch sender.tag {
         case 0:
-            Defaults[.timeFormat] = "h:mm"
+            UserDefaults.standard.set("h:mm", forKey: "timeFormat")
             timeFormat24h.state = .off
         case 1:
-            Defaults[.timeFormat] = "HH:mm"
+            UserDefaults.standard.set("HH:mm", forKey: "timeFormat")
             timeFormat12h.state = .off
         default:
             return
@@ -189,9 +188,4 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSWorkspace.shared.open(URL(string: url)!)
     }
 
-
-}
-
-extension Defaults.Keys {
-    static let timeFormat = Key<String>("timeFormat", default: "h:mm")
 }
