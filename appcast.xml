@@ -6,7 +6,7 @@
             <title>1.1.1</title>
             <pubDate>周日, 05 1月 2020 22:39:00 +0800</pubDate>
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/L1cardo/ClockBar/raw/master/ClockBar.dmg" sparkle:version="20200105" sparkle:shortVersionString="1.1.1" length="6134675" type="application/octet-stream" sparkle:edSignature="pHMCW8aoTkp0gJURkyn1EKqxnhQuNs4JboYEJBNo3LYPdQdpCS3L2Faz4Noyd0cZ3WDCGO0OKCHACqtIy3FCAw=="/>
+            <enclosure url="https://github.com/L1cardo/ClockBar/releases/download/v1.1.1/ClockBar.dmg" sparkle:version="20200105" sparkle:shortVersionString="1.1.1" length="6134675" type="application/octet-stream" sparkle:edSignature="pHMCW8aoTkp0gJURkyn1EKqxnhQuNs4JboYEJBNo3LYPdQdpCS3L2Faz4Noyd0cZ3WDCGO0OKCHACqtIy3FCAw=="/>
         </item>
     </channel>
 </rss>
