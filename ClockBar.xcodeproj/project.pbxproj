@@ -33,6 +33,8 @@
 /* Begin PBXFileReference section */
 		091F12975425693F99521C97 /* Pods_ClockBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClockBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		376ECC70A35AC58E99F85ACB /* Pods-ClockBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockBar.release.xcconfig"; path = "Target Support Files/Pods-ClockBar/Pods-ClockBar.release.xcconfig"; sourceTree = "<group>"; };
+		964408C723F3CD3200CDF07C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		964408CB23F3CEF400CDF07C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		9646ECC5237583FE0019A927 /* ClockBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9646ECC8237583FE0019A927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9646ECCA237583FF0019A927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,8 +44,6 @@
 		9646ECD62375843B0019A927 /* ClockBar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockBar-Bridging-Header.h"; sourceTree = "<group>"; };
 		9646ECD72375843B0019A927 /* TouchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBar.h; sourceTree = "<group>"; };
 		9646ECDA237584CE0019A927 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
-		96BB033923C2304F004D5AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		96D2C44D2375A94400B6B506 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
 		9B956657E1A6217BD8CE988F /* Pods-ClockBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockBar.debug.xcconfig"; path = "Target Support Files/Pods-ClockBar/Pods-ClockBar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -255,8 +255,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				9646ECCD237583FF0019A927 /* Base */,
-				96D2C44D2375A94400B6B506 /* zh-Hans */,
-				96BB033923C2304F004D5AFF /* en */,
+				964408C723F3CD3200CDF07C /* zh-Hans */,
+				964408CB23F3CEF400CDF07C /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -392,7 +392,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20200105;
+				CURRENT_PROJECT_VERSION = 20200212;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "ClockBar/Supporting Files/Info.plist";
@@ -400,7 +400,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.licardo.ClockBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ClockBar/TouchBar/ClockBar-Bridging-Header.h";
@@ -424,7 +424,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20200105;
+				CURRENT_PROJECT_VERSION = 20200212;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "ClockBar/Supporting Files/Info.plist";
@@ -432,7 +432,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.licardo.ClockBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ClockBar/TouchBar/ClockBar-Bridging-Header.h";

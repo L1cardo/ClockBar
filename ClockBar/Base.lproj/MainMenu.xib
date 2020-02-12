@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,8 +22,8 @@
                 <outlet property="preferencesWindow" destination="0Tg-5u-8lg" id="Syk-6z-nVf"/>
                 <outlet property="preferencesWindowVersionNum" destination="0QR-3a-obu" id="Uad-ws-Bdi"/>
                 <outlet property="statusBarMenu" destination="Pi3-Tz-1uf" id="i35-3c-PcL"/>
-                <outlet property="timeFormat12h" destination="pOz-61-5A5" id="mUr-gS-Ofd"/>
-                <outlet property="timeFormat24h" destination="4wa-KZ-CL6" id="Vch-co-Nl3"/>
+                <outlet property="time1Text" destination="anV-ma-p5a" id="kzM-Wk-9QI"/>
+                <outlet property="time2Text" destination="bUA-a3-FTH" id="FAk-4k-Aud"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -162,10 +162,10 @@
                                 </customSpacing>
                             </stackView>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLZ-dd-kCX" userLabel="Preferences">
-                                <rect key="frame" x="20" y="113" width="260" height="88"/>
+                                <rect key="frame" x="20" y="94" width="260" height="107"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="258-Dx-6tx" userLabel="Launch At Login Checkbox">
-                                        <rect key="frame" x="0.0" y="74" width="116" height="14"/>
+                                        <rect key="frame" x="0.0" y="93" width="116" height="14"/>
                                         <subviews>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bpk-61-s8D">
                                                 <rect key="frame" x="-2" y="-2" width="120" height="18"/>
@@ -189,49 +189,89 @@
                                         </customSpacing>
                                     </stackView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tyx-PD-sk3">
-                                        <rect key="frame" x="16" y="50" width="225" height="14"/>
+                                        <rect key="frame" x="16" y="69" width="225" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="ClockBar will launch at login automatically" id="wW0-bl-Wj0">
                                             <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="5" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbl-Pf-deP" userLabel="Time Format">
-                                        <rect key="frame" x="0.0" y="24" width="175" height="16"/>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="5" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONF-p4-ixm" userLabel="Time Format">
+                                        <rect key="frame" x="0.0" y="38" width="251" height="21"/>
                                         <subviews>
-                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U3B-QT-rxx">
-                                                <rect key="frame" x="-2" y="0.0" width="85" height="16"/>
-                                                <textFieldCell key="cell" lineBreakMode="clipping" title="Time Format:" id="iiK-Xo-mCg">
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CwS-DA-2yq">
+                                                <rect key="frame" x="-2" y="3" width="48" height="16"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="Time 1:" id="fSj-LV-MHr">
                                                     <font key="font" usesAppearanceFont="YES"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
-                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pOz-61-5A5">
-                                                <rect key="frame" x="85" y="-1" width="44" height="18"/>
-                                                <buttonCell key="cell" type="radio" title="12h" bezelStyle="regularSquare" imagePosition="left" inset="2" id="2an-7i-wIQ">
-                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="anV-ma-p5a">
+                                                <rect key="frame" x="49" y="0.0" width="60" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="XmE-5j-qup"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="CUl-YH-rZF">
                                                     <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                                <connections>
-                                                    <action selector="timeFormat:" target="Voe-Tx-rLC" id="5ee-ex-xu9"/>
-                                                </connections>
-                                            </button>
-                                            <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="4wa-KZ-CL6">
-                                                <rect key="frame" x="131" y="-1" width="46" height="18"/>
-                                                <buttonCell key="cell" type="radio" title="24h" bezelStyle="regularSquare" imagePosition="left" inset="2" id="tGZ-DO-h5d">
-                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                                <connections>
-                                                    <action selector="timeFormat:" target="Voe-Tx-rLC" id="9rq-9n-QEs"/>
-                                                </connections>
-                                            </button>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="5" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u58-I3-lGM" userLabel="Time Format">
+                                                <rect key="frame" x="114" y="0.0" width="137" height="21"/>
+                                                <subviews>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QM2-21-pSF">
+                                                        <rect key="frame" x="-2" y="3" width="50" height="16"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Time 2:" id="Td2-ho-mly">
+                                                            <font key="font" usesAppearanceFont="YES"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bUA-a3-FTH">
+                                                        <rect key="frame" x="51" y="0.0" width="60" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="fxQ-6f-m0l"/>
+                                                        </constraints>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="3HX-oZ-hoA">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fCf-Ac-ut7">
+                                                        <rect key="frame" x="114" y="-4" width="25" height="25"/>
+                                                        <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qsh-0w-O9h">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="didClickURL:" target="Voe-Tx-rLC" id="9oH-Yo-Ba8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="QM2-21-pSF" firstAttribute="centerY" secondItem="u58-I3-lGM" secondAttribute="centerY" id="78o-sS-6BM"/>
+                                                    <constraint firstItem="QM2-21-pSF" firstAttribute="centerY" secondItem="u58-I3-lGM" secondAttribute="centerY" id="Bs3-gp-2W8"/>
+                                                    <constraint firstItem="fCf-Ac-ut7" firstAttribute="centerY" secondItem="u58-I3-lGM" secondAttribute="centerY" id="Nvf-Hk-eSC"/>
+                                                    <constraint firstItem="bUA-a3-FTH" firstAttribute="centerY" secondItem="u58-I3-lGM" secondAttribute="centerY" id="YB9-S9-S1p"/>
+                                                </constraints>
+                                                <visibilityPriorities>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                </visibilityPriorities>
+                                                <customSpacing>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                </customSpacing>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="pOz-61-5A5" firstAttribute="centerY" secondItem="vbl-Pf-deP" secondAttribute="centerY" id="28X-1q-VKP"/>
-                                            <constraint firstItem="U3B-QT-rxx" firstAttribute="centerY" secondItem="vbl-Pf-deP" secondAttribute="centerY" id="5Pu-Fy-qz5"/>
-                                            <constraint firstItem="4wa-KZ-CL6" firstAttribute="centerY" secondItem="vbl-Pf-deP" secondAttribute="centerY" id="Pne-O5-ovB"/>
+                                            <constraint firstItem="anV-ma-p5a" firstAttribute="centerY" secondItem="ONF-p4-ixm" secondAttribute="centerY" id="37a-Kc-vMQ"/>
+                                            <constraint firstItem="CwS-DA-2yq" firstAttribute="centerY" secondItem="ONF-p4-ixm" secondAttribute="centerY" id="q7h-02-leh"/>
                                         </constraints>
                                         <visibilityPriorities>
                                             <integer value="1000"/>
@@ -244,9 +284,9 @@
                                             <real value="3.4028234663852886e+38"/>
                                         </customSpacing>
                                     </stackView>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aFd-zJ-NHC">
-                                        <rect key="frame" x="16" y="0.0" width="188" height="14"/>
-                                        <textFieldCell key="cell" title="Switch between 12h and 24h mode" id="gjy-f4-htW">
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GYe-W9-0na">
+                                        <rect key="frame" x="16" y="0.0" width="246" height="28"/>
+                                        <textFieldCell key="cell" title="Tap the Touch Bar icon to change between &quot;Time 1&quot; and &quot;Time 2&quot;" id="ARz-Nh-Hmi">
                                             <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -255,8 +295,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="7kN-dx-csm"/>
-                                    <constraint firstItem="aFd-zJ-NHC" firstAttribute="leading" secondItem="lLZ-dd-kCX" secondAttribute="leading" constant="18" id="Ruj-mI-tEW"/>
-                                    <constraint firstItem="vbl-Pf-deP" firstAttribute="leading" secondItem="lLZ-dd-kCX" secondAttribute="leading" id="e1u-UX-CQF"/>
+                                    <constraint firstItem="GYe-W9-0na" firstAttribute="leading" secondItem="lLZ-dd-kCX" secondAttribute="leading" constant="18" id="eZv-vS-Z3S"/>
                                     <constraint firstItem="Tyx-PD-sk3" firstAttribute="leading" secondItem="lLZ-dd-kCX" secondAttribute="leading" constant="18" id="yss-fu-GFN"/>
                                 </constraints>
                                 <visibilityPriorities>

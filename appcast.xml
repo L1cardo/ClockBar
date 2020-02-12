@@ -3,10 +3,10 @@
     <channel>
         <title>ClockBar</title>
         <item>
-            <title>1.1.1</title>
-            <pubDate>周日, 05 1月 2020 22:39:00 +0800</pubDate>
+            <title>1.2.0</title>
+            <pubDate>周三, 12 2月 2020 14:20:41 +0800</pubDate>
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/L1cardo/ClockBar/releases/download/v1.1.1/ClockBar.dmg" sparkle:version="20200105" sparkle:shortVersionString="1.1.1" length="6134906" type="application/octet-stream" sparkle:edSignature="tOurgXZnFSCQSYU4vYVoQrA8NR5YE97X3CNM+x37VGKVQoJyFSnmKhFZuKtZvJw/u5930P8eofSnhnm3qzwPAQ=="/>
+            <enclosure url="https://github.com/L1cardo/ClockBar/releases/download/v1.2.0/ClockBar.dmg" sparkle:version="20200212" sparkle:shortVersionString="1.2.0" length="6217052" type="application/octet-stream" sparkle:edSignature="BAjG9KK5ZP51QvFie5cf3Nlt2RLfaze8d7hAIdRmSgBuY3mKf6+uoKxmZGA75LeQoBeVScK5fAHRANyDP/WLCg=="/>
         </item>
     </channel>
 </rss>

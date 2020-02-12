@@ -8,16 +8,17 @@
 
 import Cocoa
 import LoginServiceKit
+import Defaults
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
 
     @IBOutlet weak var statusBarMenu: NSMenu!
     @IBOutlet weak var preferencesWindowVersionNum: NSTextField!
     @IBOutlet weak var aboutWindowVersionNum: NSTextField!
     @IBOutlet weak var launchAtLoginCheckbox: NSButton!
-    @IBOutlet weak var timeFormat12h: NSButton!
-    @IBOutlet weak var timeFormat24h: NSButton!
+    @IBOutlet weak var time1Text: NSTextField!
+    @IBOutlet weak var time2Text: NSTextField!
     @IBOutlet weak var preferencesWindow: NSWindow!
     @IBOutlet weak var aboutWindow: NSWindow!
     @IBOutlet weak var alertWindow: NSWindow!
@@ -38,14 +39,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
    
         launchAtLoginCheckbox.state = LoginServiceKit.isExistLoginItems() ? .on : .off
         
-        switch UserDefaults.standard.string(forKey: "timeFormat") {
-        case "HH:mm":
-            timeFormat12h.state = .off
-            timeFormat24h.state = .on
-        default:
-            timeFormat12h.state = .on
-            timeFormat24h.state = .off
-        }
+        time1Text.delegate = self
+        time2Text.delegate = self
+        time1Text.stringValue = Defaults[.time1]
+        time2Text.stringValue = Defaults[.time2]
         
         clockBar()
         
@@ -57,26 +54,45 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
     
+    func showTime() {
+        switch Defaults[.shouldShowTime1] {
+        case true:
+            Defaults[.showTime] = Defaults[.time1]
+        default:
+            Defaults[.showTime] = Defaults[.time2]
+        }
+    }
+    
+    func controlTextDidChange(_ obj: Notification) {
+        Defaults[.time1] = time1Text.stringValue
+        Defaults[.time2] = time2Text.stringValue
+        showTime()
+    }
     
     // add clockbar to touch bar
     func clockBar() {
         DFRSystemModalShowsCloseBoxWhenFrontMost(true)
 
         timeFormatter = DateFormatter()
-        timeFormatter?.dateFormat = UserDefaults.standard.string(forKey: "timeFormat") ?? "h:mm"
+        timeFormatter?.dateFormat = Defaults[.showTime]
         let nowTime = timeFormatter?.string(from: Date())
 
         let clockBarIdentifier = NSTouchBarItem.Identifier(rawValue: "ClockBar")
         let clockBar = NSCustomTouchBarItem.init(identifier: clockBarIdentifier)
-        touchBarButton = NSButton(title: nowTime!, target: self, action: nil)
+        touchBarButton = NSButton(title: nowTime!, target: self, action: #selector(changeTime))
         clockBar.view = touchBarButton!
         NSTouchBarItem.addSystemTrayItem(clockBar)
         DFRElementSetControlStripPresenceForIdentifier(clockBarIdentifier, true)
     }
     
+    @objc func changeTime() {
+        showTime()
+        Defaults[.shouldShowTime1] = !Defaults[.shouldShowTime1]
+    }
+    
     // update time
     @objc func updateTime() {
-        timeFormatter?.dateFormat = UserDefaults.standard.string(forKey: "timeFormat") ?? "h:mm"
+        timeFormatter?.dateFormat = Defaults[.showTime]
         touchBarButton?.title = (timeFormatter?.string(from: Date()))!
     }
     
@@ -130,10 +146,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         switch sender.tag {
         case 0:
             UserDefaults.standard.set("h:mm", forKey: "timeFormat")
-            timeFormat24h.state = .off
+            
         case 1:
             UserDefaults.standard.set("HH:mm", forKey: "timeFormat")
-            timeFormat12h.state = .off
+            
         default:
             return
         }
@@ -164,6 +180,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func didClickURL(_ sender: NSButton) {
         let url: String
         switch sender.tag {
+        case 0:
+            url = "https://blog.licardo.cn/posts/33030"
         case 1:
             url = "https://github.com/L1cardo"
         case 2:
@@ -184,4 +202,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSWorkspace.shared.open(URL(string: url)!)
     }
 
+}
+
+extension Defaults.Keys {
+    static let time1 = Key<String>("time1", default: "h:mm")
+    static let time2 = Key<String>("time2", default: "HH:mm")
+    static let showTime = Key<String>("showTime", default: "h:mm")
+    static let shouldShowTime1 = Key<Bool>("showTime1", default: true)
 }
