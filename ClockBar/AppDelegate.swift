@@ -64,8 +64,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
     }
     
     func controlTextDidChange(_ obj: Notification) {
-        Defaults[.time1] = time1Text.stringValue
-        Defaults[.time2] = time2Text.stringValue
+        if Defaults[.time1] != time1Text.stringValue {
+            Defaults[.time1] = time1Text.stringValue
+            Defaults[.shouldShowTime1] = true
+        } else if Defaults[.time2] != time2Text.stringValue {
+            Defaults[.time2] = time2Text.stringValue
+            Defaults[.shouldShowTime1] = false
+        }
         showTime()
     }
     
@@ -86,8 +91,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
     }
     
     @objc func changeTime() {
-        showTime()
         Defaults[.shouldShowTime1] = !Defaults[.shouldShowTime1]
+        showTime()
     }
     
     // update time
