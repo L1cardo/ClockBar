@@ -209,6 +209,16 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
 
 }
 
+class LinkButton: NSButton {
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    override func resetCursorRects() {
+        addCursorRect(self.bounds, cursor: .pointingHand)
+    }
+}
+
 extension Defaults.Keys {
     static let time1 = Key<String>("time1", default: "h:mm")
     static let time2 = Key<String>("time2", default: "HH:mm")

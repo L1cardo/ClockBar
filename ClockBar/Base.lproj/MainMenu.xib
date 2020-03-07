@@ -527,7 +527,7 @@
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
-                                            <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="bXZ-6z-dcv">
+                                            <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="bXZ-6z-dcv" customClass="LinkButton" customModule="ClockBar" customModuleProvider="target">
                                                 <rect key="frame" x="77" y="0.0" width="168" height="16"/>
                                                 <buttonCell key="cell" type="bevel" title="https://github.com/L1cardo" bezelStyle="regularSquare" alignment="center" inset="2" id="UjD-k2-kOc">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -559,7 +559,7 @@
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
-                                            <button verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="gEu-Cx-ZRg">
+                                            <button verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="gEu-Cx-ZRg" customClass="LinkButton" customModule="ClockBar" customModuleProvider="target">
                                                 <rect key="frame" x="101" y="0.0" width="107" height="16"/>
                                                 <buttonCell key="cell" type="bevel" title="https://licardo.cn" bezelStyle="regularSquare" alignment="center" inset="2" id="XL3-F4-gbC">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -591,7 +591,7 @@
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
-                                            <button verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="lrc-vr-xtp">
+                                            <button verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="lrc-vr-xtp" customClass="LinkButton" customModule="ClockBar" customModuleProvider="target">
                                                 <rect key="frame" x="77" y="0.0" width="99" height="16"/>
                                                 <buttonCell key="cell" type="bevel" title="@AlbertAbdilim" bezelStyle="regularSquare" alignment="center" inset="2" id="czA-Ls-52c">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -623,7 +623,7 @@
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
-                                            <button verticalHuggingPriority="750" tag="41" translatesAutoresizingMaskIntoConstraints="NO" id="XOH-BC-TW7" userLabel="Paypal">
+                                            <button verticalHuggingPriority="750" tag="41" translatesAutoresizingMaskIntoConstraints="NO" id="XOH-BC-TW7" userLabel="Paypal" customClass="LinkButton" customModule="ClockBar" customModuleProvider="target">
                                                 <rect key="frame" x="78" y="0.0" width="44" height="16"/>
                                                 <buttonCell key="cell" type="bevel" title="Paypal" bezelStyle="regularSquare" alignment="center" inset="2" id="0lI-iQ-jGI">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -634,7 +634,7 @@
                                                     <action selector="didClickURL:" target="Voe-Tx-rLC" id="SS8-Bs-649"/>
                                                 </connections>
                                             </button>
-                                            <button verticalHuggingPriority="750" tag="42" translatesAutoresizingMaskIntoConstraints="NO" id="Jnx-xR-jf8">
+                                            <button verticalHuggingPriority="750" tag="42" translatesAutoresizingMaskIntoConstraints="NO" id="Jnx-xR-jf8" customClass="LinkButton" customModule="ClockBar" customModuleProvider="target">
                                                 <rect key="frame" x="130" y="0.0" width="41" height="16"/>
                                                 <buttonCell key="cell" type="bevel" title="Alipay" bezelStyle="regularSquare" alignment="center" inset="2" id="fUc-G3-jsV">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -645,7 +645,7 @@
                                                     <action selector="didClickURL:" target="Voe-Tx-rLC" id="Tq8-6w-jJM"/>
                                                 </connections>
                                             </button>
-                                            <button verticalHuggingPriority="750" tag="43" translatesAutoresizingMaskIntoConstraints="NO" id="Q65-bw-pC8">
+                                            <button verticalHuggingPriority="750" tag="43" translatesAutoresizingMaskIntoConstraints="NO" id="Q65-bw-pC8" customClass="LinkButton" customModule="ClockBar" customModuleProvider="target">
                                                 <rect key="frame" x="179" y="0.0" width="52" height="16"/>
                                                 <buttonCell key="cell" type="bevel" title="WeChat" bezelStyle="regularSquare" alignment="center" inset="2" id="oHH-7Y-vLn">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -681,7 +681,7 @@
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
-                                            <button verticalHuggingPriority="750" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="RC5-sg-Rd6">
+                                            <button verticalHuggingPriority="750" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="RC5-sg-Rd6" customClass="LinkButton" customModule="ClockBar" customModuleProvider="target">
                                                 <rect key="frame" x="67" y="0.0" width="172" height="16"/>
                                                 <buttonCell key="cell" type="bevel" title="albert.abdilim@foxmail.com" bezelStyle="regularSquare" alignment="center" inset="2" id="1S2-TX-DeL">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
