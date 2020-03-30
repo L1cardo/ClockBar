@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,6 +18,7 @@
                 <outlet property="aboutWindow" destination="QlM-dt-ovB" id="3mP-S0-uyY"/>
                 <outlet property="aboutWindowVersionNum" destination="OSa-p3-sif" id="F1a-JR-Vci"/>
                 <outlet property="alertWindow" destination="KwB-Nj-KnK" id="0nf-qy-lKU"/>
+                <outlet property="hideStatusBarIconCheckBox" destination="dKy-RL-dgf" id="sTw-OK-k7c"/>
                 <outlet property="launchAtLoginCheckbox" destination="Bpk-61-s8D" id="isa-zX-3f0"/>
                 <outlet property="preferencesWindow" destination="0Tg-5u-8lg" id="Syk-6z-nVf"/>
                 <outlet property="preferencesWindowVersionNum" destination="0QR-3a-obu" id="Uad-ws-Bdi"/>
@@ -60,17 +61,17 @@
         <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="0Tg-5u-8lg">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
             <windowPositionMask key="initialPositionMask" topStrut="YES"/>
-            <rect key="contentRect" x="703" y="550" width="300" height="360"/>
+            <rect key="contentRect" x="703" y="550" width="300" height="400"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1792" height="1097"/>
             <view key="contentView" id="plI-qm-M6E">
-                <rect key="frame" x="0.0" y="0.0" width="300" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <visualEffectView blendingMode="behindWindow" material="toolTip" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="rJi-YE-Yq0">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="360"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="29B-j2-qMQ">
-                                <rect key="frame" x="116" y="262" width="68" height="68"/>
+                                <rect key="frame" x="116" y="302" width="68" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="FRl-dm-lVF"/>
                                     <constraint firstAttribute="width" constant="68" id="kuW-E8-lkO"/>
@@ -78,7 +79,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon" id="E4H-MF-b9T"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6kE-Jp-lHN">
-                                <rect key="frame" x="108" y="231" width="84" height="23"/>
+                                <rect key="frame" x="108" y="271" width="84" height="23"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="ClockBar" id="Gdv-id-Bfe">
                                     <font key="font" metaFont="system" size="20"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -86,12 +87,12 @@
                                 </textFieldCell>
                             </textField>
                             <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="5" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jrr-c6-pcb" userLabel="Version">
-                                <rect key="frame" x="95" y="209" width="111" height="14"/>
+                                <rect key="frame" x="95" y="249" width="111" height="14"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ghx-xm-Rj1">
                                         <rect key="frame" x="-2" y="0.0" width="47" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Version:" id="UGf-nk-Lea">
-                                            <font key="font" metaFont="message" size="11"/>
+                                            <font key="font" metaFont="controlContent" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -99,7 +100,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0QR-3a-obu">
                                         <rect key="frame" x="46" y="0.0" width="67" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="versionNum" id="wk5-1m-IuC">
-                                            <font key="font" metaFont="message" size="11"/>
+                                            <font key="font" metaFont="controlContent" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -162,10 +163,10 @@
                                 </customSpacing>
                             </stackView>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLZ-dd-kCX" userLabel="Preferences">
-                                <rect key="frame" x="20" y="94" width="260" height="107"/>
+                                <rect key="frame" x="20" y="86" width="260" height="155"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="258-Dx-6tx" userLabel="Launch At Login Checkbox">
-                                        <rect key="frame" x="0.0" y="93" width="116" height="14"/>
+                                        <rect key="frame" x="0.0" y="141" width="116" height="14"/>
                                         <subviews>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bpk-61-s8D">
                                                 <rect key="frame" x="-2" y="-2" width="120" height="18"/>
@@ -189,9 +190,27 @@
                                         </customSpacing>
                                     </stackView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tyx-PD-sk3">
-                                        <rect key="frame" x="16" y="69" width="225" height="14"/>
+                                        <rect key="frame" x="16" y="117" width="225" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="ClockBar will launch at login automatically" id="wW0-bl-Wj0">
-                                            <font key="font" metaFont="message" size="11"/>
+                                            <font key="font" metaFont="controlContent" size="11"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dKy-RL-dgf">
+                                        <rect key="frame" x="-2" y="91" width="146" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Hide Status Bar Icon" bezelStyle="regularSquare" imagePosition="left" inset="2" id="O1r-nz-wfB">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="HideStatusBarIconChecked:" target="Voe-Tx-rLC" id="jLb-W3-rgl"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L9p-3f-3WW">
+                                        <rect key="frame" x="18" y="69" width="222" height="14"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Click ClockBar app to reopen this window" id="YbE-jg-caz">
+                                            <font key="font" metaFont="controlContent" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -240,7 +259,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fCf-Ac-ut7">
+                                                    <button toolTip="Time Format Help" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fCf-Ac-ut7">
                                                         <rect key="frame" x="114" y="-4" width="25" height="25"/>
                                                         <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qsh-0w-O9h">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -287,7 +306,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GYe-W9-0na">
                                         <rect key="frame" x="16" y="0.0" width="246" height="28"/>
                                         <textFieldCell key="cell" title="Tap the Touch Bar icon to change between &quot;Time 1&quot; and &quot;Time 2&quot;" id="ARz-Nh-Hmi">
-                                            <font key="font" metaFont="message" size="11"/>
+                                            <font key="font" metaFont="controlContent" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -295,6 +314,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="7kN-dx-csm"/>
+                                    <constraint firstItem="L9p-3f-3WW" firstAttribute="leading" secondItem="lLZ-dd-kCX" secondAttribute="leading" constant="20" id="K5Z-bw-1fI"/>
                                     <constraint firstItem="GYe-W9-0na" firstAttribute="leading" secondItem="lLZ-dd-kCX" secondAttribute="leading" constant="18" id="eZv-vS-Z3S"/>
                                     <constraint firstItem="Tyx-PD-sk3" firstAttribute="leading" secondItem="lLZ-dd-kCX" secondAttribute="leading" constant="18" id="yss-fu-GFN"/>
                                 </constraints>
@@ -303,8 +323,12 @@
                                     <integer value="1000"/>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
                                 </visibilityPriorities>
                                 <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
@@ -335,7 +359,7 @@
                     <constraint firstAttribute="trailing" secondItem="rJi-YE-Yq0" secondAttribute="trailing" id="wO2-tJ-yg0"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="123" y="121"/>
+            <point key="canvasLocation" x="123" y="141"/>
         </window>
         <window title="Alert" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="KwB-Nj-KnK">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" fullSizeContentView="YES"/>
@@ -482,7 +506,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="k71-Ma-etO">
                                         <rect key="frame" x="-2" y="0.0" width="47" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Version:" id="ryL-ba-ghU">
-                                            <font key="font" metaFont="message" size="11"/>
+                                            <font key="font" metaFont="controlContent" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -490,7 +514,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OSa-p3-sif">
                                         <rect key="frame" x="46" y="0.0" width="67" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="versionNum" id="erf-iJ-sJj">
-                                            <font key="font" metaFont="message" size="11"/>
+                                            <font key="font" metaFont="controlContent" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>

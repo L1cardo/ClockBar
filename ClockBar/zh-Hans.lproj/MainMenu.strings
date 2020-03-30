@@ -35,6 +35,10 @@
 /* Class = "NSWindow"; title = "Alert"; ObjectID = "KwB-Nj-KnK"; */
 "KwB-Nj-KnK.title" = "警告";
 
+/* Class = "NSButtonCell"; title = "Hide Status Bar Icon"; ObjectID = "O1r-nz-wfB"; */
+"O1r-nz-wfB.title" = "隐藏状态栏图标";
+
+
 /* Class = "NSTextFieldCell"; title = "⚠️ Note that this will quit ClockBar, and you will not be able to know the time with a single glance at Touch Bar!"; ObjectID = "OSv-cp-xyZ"; */
 "OSv-cp-xyZ.title" = "⚠️ 请注意, 这将退出ClockBar, 您无法将只看一眼 Touch Bar 就知道时间！";
 
@@ -62,6 +66,9 @@
 /* Class = "NSButtonCell"; title = "https://licardo.cn"; ObjectID = "XL3-F4-gbC"; */
 "XL3-F4-gbC.title" = "https://licardo.cn";
 
+/* Class = "NSTextFieldCell"; title = "Click ClockBar app to reopen this window"; ObjectID = "YbE-jg-caz"; */
+"YbE-jg-caz.title" = "点击 ClockBar 应用程序来重新打开此窗口";
+
 /* Class = "NSTextFieldCell"; title = "🐦 Twitter:"; ObjectID = "aBj-fa-9vi"; */
 "aBj-fa-9vi.title" = "🐦 推特:";
 
@@ -76,6 +83,9 @@
 
 /* Class = "NSMenuItem"; title = "About ClockBar"; ObjectID = "exy-IO-rt5"; */
 "exy-IO-rt5.title" = "关于 ClockBar";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Time Format Help"; ObjectID = "fCf-Ac-ut7"; */
+"fCf-Ac-ut7.ibShadowedToolTip" = "时间格式帮助";
 
 /* Class = "NSTextFieldCell"; title = "Time 1:"; ObjectID = "fSj-LV-MHr"; */
 "fSj-LV-MHr.title" = "时间 1:";

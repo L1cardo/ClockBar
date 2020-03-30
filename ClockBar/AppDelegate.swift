@@ -17,6 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
     @IBOutlet weak var preferencesWindowVersionNum: NSTextField!
     @IBOutlet weak var aboutWindowVersionNum: NSTextField!
     @IBOutlet weak var launchAtLoginCheckbox: NSButton!
+    @IBOutlet weak var hideStatusBarIconCheckBox: NSButton!
     @IBOutlet weak var time1Text: NSTextField!
     @IBOutlet weak var time2Text: NSTextField!
     @IBOutlet weak var preferencesWindow: NSWindow!
@@ -38,6 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
         displayStatusBarMenu()
    
         launchAtLoginCheckbox.state = LoginServiceKit.isExistLoginItems() ? .on : .off
+        hideStatusBarIconCheckBox.state = Defaults[.shouldShowStatusBarIcon] ? .off : .on
         
         time1Text.delegate = self
         time2Text.delegate = self
@@ -50,6 +52,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
 
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        NSApp.activate(ignoringOtherApps: true)
+        aboutWindow.close()
+        preferencesWindow.makeKeyAndOrderFront(sender)
+        return true
+    }
+    
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
@@ -105,6 +114,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
     func displayStatusBarMenu() {
         guard let button = statusBarItem.button else { return }
         statusBarItem.button?.image = NSImage(named: "StatusBarIcon")
+        statusBarItem.isVisible = Defaults[.shouldShowStatusBarIcon] ? true : false
         button.action = #selector(statusBarMenuClicked)
         button.sendAction(on: [.leftMouseUp, .rightMouseUp])
     }
@@ -139,11 +149,19 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
     
     // launch at login checkbox
     @IBAction func launchAtLoginChecked(_ sender: NSButton) {
-        let isChecked = launchAtLoginCheckbox.state == .on
-        if isChecked == true {
+        if sender.state == .on {
             LoginServiceKit.addLoginItems()
         } else {
             LoginServiceKit.removeLoginItems()
+        }
+    }
+    @IBAction func HideStatusBarIconChecked(_ sender: NSButton) {
+        if sender.state == .on {
+            statusBarItem.isVisible = false
+            Defaults[.shouldShowStatusBarIcon] = false
+        } else {
+            statusBarItem.isVisible = true
+            Defaults[.shouldShowStatusBarIcon] = true
         }
     }
     
@@ -151,10 +169,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
         switch sender.tag {
         case 0:
             UserDefaults.standard.set("h:mm", forKey: "timeFormat")
-            
         case 1:
             UserDefaults.standard.set("HH:mm", forKey: "timeFormat")
-            
         default:
             return
         }
@@ -206,7 +222,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
         }
         NSWorkspace.shared.open(URL(string: url)!)
     }
-
 }
 
 class LinkButton: NSButton {
@@ -223,5 +238,6 @@ extension Defaults.Keys {
     static let time1 = Key<String>("time1", default: "h:mm")
     static let time2 = Key<String>("time2", default: "HH:mm")
     static let showTime = Key<String>("showTime", default: "h:mm")
-    static let shouldShowTime1 = Key<Bool>("showTime1", default: true)
+    static let shouldShowTime1 = Key<Bool>("shouldShowTime1", default: true)
+    static let shouldShowStatusBarIcon = Key<Bool>("shouldShowStatusBarIcon", default: true)
 }
